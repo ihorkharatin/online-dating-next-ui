@@ -1,7 +1,8 @@
 // content/terms/terms-fr.tsx
 import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import WebsiteName from "@/components/WebsiteName";
 
-export default function TermsFr({ website }: { website: string }) {
+export default function TermsFr() {
   return (
     <div className={style.termsContainer}>
       <h1>CONDITIONS GÉNÉRALES D’UTILISATION</h1>
@@ -14,10 +15,10 @@ export default function TermsFr({ website }: { website: string }) {
         3HH.
       </p>
       <p>
-        Nous exploitons {website}. {website} (le « Site ») ainsi que tout autre
-        produit ou service renvoyant aux présentes conditions (les « Services
-        »). Bienvenue sur {website}, votre service de rencontre en ligne.{" "}
-        {website}
+        Nous exploitons <WebsiteName />. <WebsiteName /> (le « Site ») ainsi que
+        tout autre produit ou service renvoyant aux présentes conditions (les «
+        Services »). Bienvenue sur <WebsiteName />, votre service de rencontre
+        en ligne. <WebsiteName />
         met en relation des personnes partageant des centres d’intérêt, des
         préférences et des valeurs communes, et propose notamment lettres,
         visioconférences, messagerie texte et audio.
@@ -34,15 +35,17 @@ export default function TermsFr({ website }: { website: string }) {
         UTILISATION.
       </h4>
       <p>
-        Les services de {website} n’autorisent en aucun cas la prostitution ni
-        les services d’escort. Toute mention d’argent, de cadeaux ou de
-        compensation liée à ces activités sur {website} ou par message privé est
-        interdite. L’administration modère la plateforme et peut supprimer un
-        compte en cas d’infraction. Des modifications programmées des Services
-        peuvent vous être notifiées (par ex. via update@{website}). Poursuivre
-        l’utilisation après l’entrée en vigueur des modifications vaut
-        acceptation. Les Services sont réservés aux personnes âgées d’au moins
-        18 ans.
+        Les services de <WebsiteName /> n’autorisent en aucun cas la
+        prostitution ni les services d’escort. Toute mention d’argent, de
+        cadeaux ou de compensation liée à ces activités sur <WebsiteName /> ou
+        par message privé est interdite. L’administration modère la plateforme
+        et peut supprimer un compte en cas d’infraction. Des modifications
+        programmées des Services peuvent vous être notifiées (par ex. via
+        update@
+        <WebsiteName />
+        ). Poursuivre l’utilisation après l’entrée en vigueur des modifications
+        vaut acceptation. Les Services sont réservés aux personnes âgées d’au
+        moins 18 ans.
       </p>
 
       <h2>TABLE DES MATIÈRES</h2>
@@ -88,11 +91,11 @@ export default function TermsFr({ website }: { website: string }) {
       <p>
         <strong>Nos droits.</strong> Nous détenons (ou sommes licenciés pour)
         tous les droits sur les codes sources, bases de données,
-        fonctionnalités, logiciels, designs de {website}, audio, vidéo, textes,
-        photos et graphismes (le « Contenu »), ainsi que les marques et logos
-        (les « Marques »). Nous n’utilisons pas l’IA pour générer du contenu ;
-        tout contenu est vérifié. Contenu et Marques sont protégés par les lois
-        et traités en vigueur.
+        fonctionnalités, logiciels, designs de <WebsiteName />, audio, vidéo,
+        textes, photos et graphismes (le « Contenu »), ainsi que les marques et
+        logos (les « Marques »). Nous n’utilisons pas l’IA pour générer du
+        contenu ; tout contenu est vérifié. Contenu et Marques sont protégés par
+        les lois et traités en vigueur.
       </p>
       <p>
         <strong>Votre usage.</strong> Sous réserve du respect des présentes — y
@@ -190,7 +193,7 @@ export default function TermsFr({ website }: { website: string }) {
           contrevenants.
         </li>
         <li>
-          Vous êtes responsable des contenus et activités sur {website}.
+          Vous êtes responsable des contenus et activités sur <WebsiteName />.
           Signalez tout comportement suspect/illégal.
         </li>
         <li>
@@ -230,7 +233,7 @@ export default function TermsFr({ website }: { website: string }) {
         Apprenez à vous connaître progressivement. Plus sûr de demander à
         l’autre de venir chez vous que de voyager. N’acceptez pas des « emplois
         » illégaux.
-        {website} interdit toute sollicitation, y compris escort.
+        <WebsiteName /> interdit toute sollicitation, y compris escort.
       </p>
       <p>
         <strong>Services d’escort :</strong>{" "}

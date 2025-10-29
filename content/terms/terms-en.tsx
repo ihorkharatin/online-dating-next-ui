@@ -1,7 +1,8 @@
 // content/terms/terms-en.tsx
 import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import WebsiteName from "@/components/WebsiteName";
 
-export default function TermsEn({ website }: { website: string }) {
+export default function TermsEn() {
   return (
     <div className={style.termsContainer}>
       <h1>TERMS AND CONDITIONS</h1>
@@ -14,19 +15,20 @@ export default function TermsEn({ website }: { website: string }) {
         3HH.
       </p>
       <p>
-        We operate the {website}. {website} (the ‘Site‘), as well as any other
-        related products and services that refer or link to these legal terms
-        (the ‘Legal Terms‘) (collectively, the ‘Services‘). Welcome to {website}
-        , your premier Online Dating Service! With {website}, finding your
+        We operate the <WebsiteName />. <WebsiteName /> (the ‘Site‘), as well as
+        any other related products and services that refer or link to these
+        legal terms (the ‘Legal Terms‘) (collectively, the ‘Services‘). Welcome
+        to <WebsiteName />
+        , your premier Online Dating Service! With <WebsiteName />, finding your
         perfect match has never been easier. Our intuitive platform connects you
         with like-minded individuals based on your interests, preferences, and
-        values. {website} offers a wide variety of dating options for Singles:
-        Letters, Video Chat, Text Chat, Voice Chat. Whether you're searching for
-        a meaningful relationship, casual companionship, or something in
-        between, {website} offers a safe and enjoyable environment to explore
-        and connect with potential partners. Say goodbye to endless swiping and
-        hello to meaningful connections – join {website} today and let us help
-        you find love in the digital age!
+        values. <WebsiteName /> offers a wide variety of dating options for
+        Singles: Letters, Video Chat, Text Chat, Voice Chat. Whether you're
+        searching for a meaningful relationship, casual companionship, or
+        something in between, <WebsiteName /> offers a safe and enjoyable
+        environment to explore and connect with potential partners. Say goodbye
+        to endless swiping and hello to meaningful connections – join{" "}
+        <WebsiteName /> today and let us help you find love in the digital age!
       </p>
       <p>
         You can contact us by phone at +44 7476 887856 or +48500815139, email at
@@ -44,20 +46,21 @@ export default function TermsEn({ website }: { website: string }) {
         USE IMMEDIATELY.
       </h4>
       <p>
-        We provide Online Dating Services at the site {website}. Such services
-        prostitution and escort services are prohibited at the site including
-        specific wording to ensure that no money, gifts or compensation of any
-        kind is referenced or posted to the {website} or through private
-        messaging. Administration of the site moderate users and if have the
-        proove of it can remove the user from the site. We will provide you with
-        prior notice of any scheduled changes to the Services you are using. The
-        modified Legal Terms will become effective upon posting or notifying you
-        by update@{website}, as stated in the email message. By continuing to
-        use the Services after the effective date of any changes, you agree to
-        be bound by the modified terms. The Services are intended for users who
-        are at least 18 years old. Persons under the age of 18 are not permitted
-        to use or register for the Services. We recommend that you print a copy
-        of these Legal Terms for your records.
+        We provide Online Dating Services at the site <WebsiteName />. Such
+        services prostitution and escort services are prohibited at the site
+        including specific wording to ensure that no money, gifts or
+        compensation of any kind is referenced or posted to the <WebsiteName />{" "}
+        or through private messaging. Administration of the site moderate users
+        and if have the proove of it can remove the user from the site. We will
+        provide you with prior notice of any scheduled changes to the Services
+        you are using. The modified Legal Terms will become effective upon
+        posting or notifying you by update@
+        <WebsiteName />, as stated in the email message. By continuing to use
+        the Services after the effective date of any changes, you agree to be
+        bound by the modified terms. The Services are intended for users who are
+        at least 18 years old. Persons under the age of 18 are not permitted to
+        use or register for the Services. We recommend that you print a copy of
+        these Legal Terms for your records.
       </p>
 
       <h2>TABLE OF CONTENTS</h2>
@@ -108,8 +111,8 @@ export default function TermsEn({ website }: { website: string }) {
       <p>
         <strong>Our intellectual property.</strong> We are the owner or the
         licensee of all intellectual property rights in our Services, including
-        all source code, databases, functionality, software, {website} designs,
-        audio, video, text, photographs, and graphics in the Services
+        all source code, databases, functionality, software, <WebsiteName />{" "}
+        designs, audio, video, text, photographs, and graphics in the Services
         (collectively, the ‘Content’), as well as the trademarks, service marks,
         and logos contained therein (the ‘Marks’).
         <br />
@@ -346,8 +349,8 @@ export default function TermsEn({ website }: { website: string }) {
         </li>
         <li>
           Users are responsible for the content they post and the activities
-          they engage in on our {website}. Any suspicious or illegal activities
-          should be reported to our support team immediately.
+          they engage in on our <WebsiteName />. Any suspicious or illegal
+          activities should be reported to our support team immediately.
         </li>
         <li>
           Users must comply with all applicable laws and regulations related to
@@ -431,17 +434,18 @@ export default function TermsEn({ website }: { website: string }) {
         going to an unknown city or country. If someone is offering you illegal
         jobs in their country or making other tall promises to you, don’t take
         the bait and report the member to the dating site’s administrators
-        instead. {website} prohibits from using the app and {website} to solicit
-        others for services or activities of any nature. The platform is
-        designed for genuine connections and interactions, and any form of
-        solicitation undermines the integrity and purpose of our community.
+        instead. <WebsiteName /> prohibits from using the app and{" "}
+        <WebsiteName /> to solicit others for services or activities of any
+        nature. The platform is designed for genuine connections and
+        interactions, and any form of solicitation undermines the integrity and
+        purpose of our community.
       </p>
       <p>
         <strong>Escort Services:</strong> We firmly prohibit the promotion,
         solicitation, or engagement in any escort services on our platform.
       </p>
       <p>
-        {website} is committed to fostering meaningful and authentic
+        <WebsiteName /> is committed to fostering meaningful and authentic
         relationships, not commercial activities or transactions. Any profile or
         activity suggestive of escort services will be subject to immediate
         review and potential removal from our platform.
@@ -451,9 +455,9 @@ export default function TermsEn({ website }: { website: string }) {
           Additional Terms: Policy on Reporting Solicitation, Escort Services,
           and Monetary Requests
         </strong>{" "}
-        — At {website}, fostering a secure and respectful environment is our
-        utmost priority. We strictly prohibit solicitation, escort services, or
-        monetary requests, whether communicated directly between members or
+        — At <WebsiteName />, fostering a secure and respectful environment is
+        our utmost priority. We strictly prohibit solicitation, escort services,
+        or monetary requests, whether communicated directly between members or
         posted within a member’s profile. To ensure the safety and integrity of
         our community, we have established a clear reporting procedure. If you
         encounter any member soliciting prostitution, offering escort services,
@@ -481,31 +485,32 @@ export default function TermsEn({ website }: { website: string }) {
         the utmost seriousness and discretion by our dedicated team. By
         participating in this vigilant reporting process, you contribute
         significantly to the safety and positive experience of all members on{" "}
-        {website}. We are grateful for your commitment to upholding the
-        standards of our community and ensuring that {website} remains a safe
-        and welcoming space for genuine connections. Thank you for your
+        <WebsiteName />. We are grateful for your commitment to upholding the
+        standards of our community and ensuring that <WebsiteName /> remains a
+        safe and welcoming space for genuine connections. Thank you for your
         cooperation and responsible membership.
       </p>
       <p>
-        <strong>Human Trafficking:</strong> {website} unequivocally condemns
-        human trafficking in all its forms. We do not tolerate any activities,
-        behaviors, or content that may be indicative of, or contribute to, human
-        trafficking. We are dedicated to the safety and well-being of our
-        members and will cooperate with law enforcement authorities to address
-        any such issues that are brought to our attention.
+        <strong>Human Trafficking:</strong> <WebsiteName /> unequivocally
+        condemns human trafficking in all its forms. We do not tolerate any
+        activities, behaviors, or content that may be indicative of, or
+        contribute to, human trafficking. We are dedicated to the safety and
+        well-being of our members and will cooperate with law enforcement
+        authorities to address any such issues that are brought to our
+        attention.
       </p>
       <h3>Sexual Services and Explicit Content</h3>
       <p>
         Our platform explicitly forbids the solicitation of sexual services,
         including but not limited to in-person meetings for sexual purposes,
         sexual massages, or the exchange of naked pictures or explicit content.{" "}
-        {website} is a place for respectful and appropriate interactions, and we
-        expect all members to adhere to these standards to maintain a safe and
-        welcoming environment. Members found to be engaging in any of these
-        prohibited activities may face immediate suspension or permanent banning
-        from {website}. We encourage our community to report any suspicious or
-        inappropriate activities to help us ensure a safe and positive
-        experience for everyone.
+        <WebsiteName /> is a place for respectful and appropriate interactions,
+        and we expect all members to adhere to these standards to maintain a
+        safe and welcoming environment. Members found to be engaging in any of
+        these prohibited activities may face immediate suspension or permanent
+        banning from <WebsiteName />. We encourage our community to report any
+        suspicious or inappropriate activities to help us ensure a safe and
+        positive experience for everyone.
       </p>
       <p>
         As a user of the Services, you agree not to: Systematically retrieve

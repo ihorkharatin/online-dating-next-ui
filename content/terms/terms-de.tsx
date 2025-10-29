@@ -1,7 +1,8 @@
 // content/terms/terms-de.tsx
 import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import WebsiteName from "@/components/WebsiteName";
 
-export default function TermsDe({ website }: { website: string }) {
+export default function TermsDe() {
   return (
     <div className={style.termsContainer}>
       <h1>ALLGEMEINE GESCHÄFTSBEDINGUNGEN</h1>
@@ -14,15 +15,15 @@ export default function TermsDe({ website }: { website: string }) {
         London, W1B 3HH.
       </p>
       <p>
-        Wir betreiben {website}. {website} (die „Website“) sowie weitere
-        verbundene Produkte und Dienste, die auf diese Rechtlichen Bedingungen
-        („Rechtliche Bedingungen“, zusammen die „Dienste“) verweisen. Willkommen
-        bei {website}, Ihrem Online-Dating-Service! {website} verbindet
-        gleichgesinnte Menschen anhand Ihrer Interessen, Präferenzen und Werte
-        und bietet u. a. Briefe, Videochat, Textchat und Sprachanrufe. Ob Sie
-        eine feste Beziehung, lockere Bekanntschaften oder etwas dazwischen
-        suchen – {website} stellt eine sichere und angenehme Umgebung für echte
-        Kontakte bereit.
+        Wir betreiben <WebsiteName />. <WebsiteName /> (die „Website“) sowie
+        weitere verbundene Produkte und Dienste, die auf diese Rechtlichen
+        Bedingungen („Rechtliche Bedingungen“, zusammen die „Dienste“)
+        verweisen. Willkommen bei <WebsiteName />, Ihrem Online-Dating-Service!{" "}
+        <WebsiteName /> verbindet gleichgesinnte Menschen anhand Ihrer
+        Interessen, Präferenzen und Werte und bietet u. a. Briefe, Videochat,
+        Textchat und Sprachanrufe. Ob Sie eine feste Beziehung, lockere
+        Bekanntschaften oder etwas dazwischen suchen – <WebsiteName /> stellt
+        eine sichere und angenehme Umgebung für echte Kontakte bereit.
       </p>
       <p>
         Kontakt: +44 7476 887856 oder +48 500 815 139, E-Mail:
@@ -38,15 +39,17 @@ export default function TermsDe({ website }: { website: string }) {
         SIE DIE DIENSTE NICHT NUTZEN UND MÜSSEN DIE NUTZUNG SOFORT BEENDEN.
       </h4>
       <p>
-        Wir erbringen Online-Dating-Dienste unter {website}. Prostitution und
-        Escort-Leistungen sind strengstens untersagt; es ist insbesondere
-        verboten, Geld, Geschenke oder jegliche Vergütung auf {website} oder in
-        privaten Nachrichten zu erwähnen bzw. anzubieten. Die Administration
-        moderiert Benutzer und kann Konten bei Verstößen entfernen. Über
-        geplante Änderungen der Dienste informieren wir im Voraus (z. B. per
-        E-Mail von update@{website}). Durch die weitere Nutzung nach
-        Inkrafttreten erklären Sie Ihr Einverständnis. Die Dienste richten sich
-        ausschließlich an Personen ab 18 Jahren.
+        Wir erbringen Online-Dating-Dienste unter <WebsiteName />. Prostitution
+        und Escort-Leistungen sind strengstens untersagt; es ist insbesondere
+        verboten, Geld, Geschenke oder jegliche Vergütung auf <WebsiteName />{" "}
+        oder in privaten Nachrichten zu erwähnen bzw. anzubieten. Die
+        Administration moderiert Benutzer und kann Konten bei Verstößen
+        entfernen. Über geplante Änderungen der Dienste informieren wir im
+        Voraus (z. B. per E-Mail von update@
+        <WebsiteName />
+        ). Durch die weitere Nutzung nach Inkrafttreten erklären Sie Ihr
+        Einverständnis. Die Dienste richten sich ausschließlich an Personen ab
+        18 Jahren.
       </p>
 
       <h2>INHALTSVERZEICHNIS</h2>
@@ -92,12 +95,13 @@ export default function TermsDe({ website }: { website: string }) {
       <p>
         <strong>Unser geistiges Eigentum.</strong> Wir sind Inhaber bzw.
         Lizenznehmer sämtlicher Rechte an Quellcode, Datenbanken, Funktionen,
-        Software, {website}-Designs, Audio, Video, Texten, Fotos und Grafiken
-        (zusammen „Inhalte“) sowie Marken, Dienstleistungsmarken und Logos
-        („Kennzeichen“). Wir verwenden keine KI zur Generierung von Inhalten;
-        alle Inhalte werden verifiziert. Inhalte und Kennzeichen sind urheber-
-        und markenrechtlich geschützt. Bereitstellung erfolgt „WIE VORLIEGEND“
-        ausschließlich zur persönlichen, nicht-kommerziellen Nutzung.
+        Software, <WebsiteName />
+        -Designs, Audio, Video, Texten, Fotos und Grafiken (zusammen „Inhalte“)
+        sowie Marken, Dienstleistungsmarken und Logos („Kennzeichen“). Wir
+        verwenden keine KI zur Generierung von Inhalten; alle Inhalte werden
+        verifiziert. Inhalte und Kennzeichen sind urheber- und markenrechtlich
+        geschützt. Bereitstellung erfolgt „WIE VORLIEGEND“ ausschließlich zur
+        persönlichen, nicht-kommerziellen Nutzung.
       </p>
       <p>
         <strong>Ihre Nutzung.</strong> Vorbehaltlich der Einhaltung dieser
@@ -194,7 +198,7 @@ export default function TermsDe({ website }: { website: string }) {
           Inhalte, die solche Aktivitäten fördern, sind verboten.
         </li>
         <li>
-          Nutzer sind für ihre Inhalte und Aktivitäten auf {website}
+          Nutzer sind für ihre Inhalte und Aktivitäten auf <WebsiteName />
           verantwortlich und sollen verdächtige/illegale Aktivitäten melden.
         </li>
         <li>
@@ -233,9 +237,9 @@ export default function TermsDe({ website }: { website: string }) {
       <p>
         Lernen Sie Kontakte schrittweise kennen. Sicherer ist es, jemanden zu
         sich (in Ihre Umgebung) einzuladen, als in unbekannte Städte/Länder zu
-        reisen. Nehmen Sie keine illegalen Jobangebote an. {website} untersagt
-        jegliche Form von „Solicitation“ (Anwerben/Anbieten), inkl. Escort-
-        Dienstleistungen.
+        reisen. Nehmen Sie keine illegalen Jobangebote an. <WebsiteName />{" "}
+        untersagt jegliche Form von „Solicitation“ (Anwerben/Anbieten), inkl.
+        Escort- Dienstleistungen.
       </p>
       <p>
         <strong>Escort-Dienste:</strong> Bewerbung, Anbieten oder Teilnahme sind

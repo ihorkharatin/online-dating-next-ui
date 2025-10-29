@@ -1,7 +1,8 @@
 // content/terms/terms-pt.tsx
 import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import WebsiteName from "@/components/WebsiteName";
 
-export default function TermsPt({ website }: { website: string }) {
+export default function TermsPt() {
   return (
     <div className={style.termsContainer}>
       <h1>TERMOS E CONDIÇÕES</h1>
@@ -14,9 +15,9 @@ export default function TermsPt({ website }: { website: string }) {
         3HH.
       </p>
       <p>
-        Operamos {website}. {website} (o “Site”), bem como quaisquer outros
+        Operamos <WebsiteName/>. <WebsiteName/> (o “Site”), bem como quaisquer outros
         produtos e serviços que se refiram a estes termos (os “Serviços”).
-        Bem-vindo(a) ao {website}, seu serviço de namoro on-line. O {website}
+        Bem-vindo(a) ao <WebsiteName/>, seu serviço de namoro on-line. O <WebsiteName/>
         conecta pessoas com interesses, preferências e valores em comum e
         oferece cartas, videochamadas, chat de texto e chat de voz. Procure um
         relacionamento sério, companhia ou algo entre ambos em um ambiente
@@ -35,13 +36,13 @@ export default function TermsPt({ website }: { website: string }) {
         UTILIZAR OS SERVIÇOS E DEVE INTERROMPER O USO IMEDIATAMENTE.
       </h4>
       <p>
-        Prestamos serviços de namoro on-line em {website}. A prostituição e os
+        Prestamos serviços de namoro on-line em <WebsiteName/>. A prostituição e os
         serviços de acompanhantes (escort) são estritamente proibidos. É
         proibido referir-se a dinheiro, presentes ou qualquer compensação de
-        qualquer tipo em {website} ou via mensagens privadas. A administração
+        qualquer tipo em <WebsiteName/> ou via mensagens privadas. A administração
         modera usuários e pode remover contas em caso de infrações. Mudanças
         programadas nos Serviços podem ser notificadas (por exemplo, via update@
-        {website}). Ao continuar usando após a vigência das alterações, você
+        <WebsiteName/>). Ao continuar usando após a vigência das alterações, você
         aceita os termos modificados. Os Serviços destinam-se a maiores de 18
         anos.
       </p>
@@ -90,7 +91,7 @@ export default function TermsPt({ website }: { website: string }) {
       <p>
         <strong>Nossa propriedade intelectual.</strong> Somos titulares ou
         licenciados de todos os direitos sobre o código-fonte, bases de dados,
-        funcionalidades, software, designs de {website}, áudios, vídeos, textos,
+        funcionalidades, software, designs de <WebsiteName/>, áudios, vídeos, textos,
         fotografias e gráficos (o “Conteúdo”), bem como marcas e logotipos (as
         “Marcas”). Não utilizamos IA para gerar conteúdo; todo conteúdo é
         verificado. Conteúdo e Marcas são protegidos por leis e tratados. São
@@ -191,7 +192,7 @@ export default function TermsPt({ website }: { website: string }) {
           tolerância zero; contas infratoras serão bloqueadas.
         </li>
         <li>
-          Você é responsável pelo conteúdo e atividades em {website}. Denuncie
+          Você é responsável pelo conteúdo e atividades em <WebsiteName/>. Denuncie
           comportamento suspeito/ilícito.
         </li>
         <li>
@@ -231,7 +232,7 @@ export default function TermsPt({ website }: { website: string }) {
         Conheça-se gradualmente. É mais seguro pedir para a outra pessoa
         visitá-lo do que viajar a lugar desconhecido. Não aceite “empregos”
         ilegais.
-        {website} proíbe qualquer solicitação/comercialização, inclusive escort.
+        <WebsiteName/> proíbe qualquer solicitação/comercialização, inclusive escort.
       </p>
       <p>
         <strong>Serviços de acompanhantes (escort):</strong> proibida promoção,

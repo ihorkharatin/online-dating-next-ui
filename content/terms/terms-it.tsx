@@ -1,7 +1,8 @@
 // content/terms/terms-it.tsx
 import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import WebsiteName from "@/components/WebsiteName";
 
-export default function TermsIt({ website }: { website: string }) {
+export default function TermsIt() {
   return (
     <div className={style.termsContainer}>
       <h1>TERMINI E CONDIZIONI</h1>
@@ -14,14 +15,14 @@ export default function TermsIt({ website }: { website: string }) {
         Street, London, W1B 3HH.
       </p>
       <p>
-        Gestiamo {website}. {website} (il «Sito»), nonché altri prodotti e
-        servizi che rimandano ai presenti Termini legali (le «Condizioni» o i
-        «Servizi»). Benvenuto/a su {website}, il tuo servizio di incontri
-        online! {website}
+        Gestiamo <WebsiteName />. <WebsiteName /> (il «Sito»), nonché altri
+        prodotti e servizi che rimandano ai presenti Termini legali (le
+        «Condizioni» o i «Servizi»). Benvenuto/a su <WebsiteName />, il tuo
+        servizio di incontri online! <WebsiteName />
         mette in contatto persone con interessi, preferenze e valori affini e
         offre, tra l’altro, lettere, video chat, chat testuali e vocali. Che tu
-        stia cercando una relazione seria, compagnia o altro, {website} offre un
-        ambiente sicuro e piacevole per conoscenze autentiche.
+        stia cercando una relazione seria, compagnia o altro, <WebsiteName />{" "}
+        offre un ambiente sicuro e piacevole per conoscenze autentiche.
       </p>
       <p>
         Contatti: +44 7476 887856 o +48 500 815 139, email:
@@ -37,15 +38,16 @@ export default function TermsIt({ website }: { website: string }) {
         L’USO DEI SERVIZI E DEVI INTERROMPERNE IMMEDIATAMENTE L’UTILIZZO.
       </h4>
       <p>
-        Forniamo servizi di incontri online su {website}. Sono severamente
+        Forniamo servizi di incontri online su <WebsiteName />. Sono severamente
         vietati prostituzione ed escort; in particolare è vietato fare
-        riferimento a denaro, regali o qualsiasi compenso su {website} o nei
-        messaggi privati. L’amministrazione modera gli utenti e può rimuovere
-        gli account in caso di violazioni. Eventuali modifiche programmate ai
-        Servizi saranno comunicate in anticipo (ad es. da update@{website}).
-        Continuando a usare i Servizi dopo l’entrata in vigore delle modifiche,
-        accetti i termini aggiornati. I Servizi sono destinati esclusivamente a
-        maggiorenni (18+).
+        riferimento a denaro, regali o qualsiasi compenso su <WebsiteName /> o
+        nei messaggi privati. L’amministrazione modera gli utenti e può
+        rimuovere gli account in caso di violazioni. Eventuali modifiche
+        programmate ai Servizi saranno comunicate in anticipo (ad es. da update@
+        <WebsiteName />
+        ). Continuando a usare i Servizi dopo l’entrata in vigore delle
+        modifiche, accetti i termini aggiornati. I Servizi sono destinati
+        esclusivamente a maggiorenni (18+).
       </p>
 
       <h2>INDICE</h2>
@@ -91,11 +93,11 @@ export default function TermsIt({ website }: { website: string }) {
       <p>
         <strong>La nostra proprietà intellettuale.</strong> Siamo titolari o
         licenziatari di tutti i diritti sui codici sorgente, database,
-        funzionalità, software, design di {website}, audio, video, testi, foto e
-        grafica (il «Contenuto»), e dei marchi, marchi di servizio e loghi (i
-        «Marchi»). Non utilizziamo IA per generare contenuti; tutti i contenuti
-        sono verificati. Contenuti e Marchi sono protetti da leggi e trattati.
-        Il Contenuto è fornito «COSÌ COM’È» per un uso personale e non
+        funzionalità, software, design di <WebsiteName />, audio, video, testi,
+        foto e grafica (il «Contenuto»), e dei marchi, marchi di servizio e
+        loghi (i «Marchi»). Non utilizziamo IA per generare contenuti; tutti i
+        contenuti sono verificati. Contenuti e Marchi sono protetti da leggi e
+        trattati. Il Contenuto è fornito «COSÌ COM’È» per un uso personale e non
         commerciale.
       </p>
       <p>
@@ -193,8 +195,8 @@ export default function TermsIt({ website }: { website: string }) {
           bloccati.
         </li>
         <li>
-          Sei responsabile dei contenuti e delle attività su {website}; segnala
-          subito comportamenti sospetti/illeciti.
+          Sei responsabile dei contenuti e delle attività su <WebsiteName />;
+          segnala subito comportamenti sospetti/illeciti.
         </li>
         <li>
           Devi rispettare le leggi applicabili sulla condotta online; le
@@ -232,8 +234,8 @@ export default function TermsIt({ website }: { website: string }) {
       <p>
         Conoscetevi con gradualità. È più sicuro chiedere all’altra persona di
         venire da te, invece di viaggiare verso luoghi sconosciuti. Non
-        accettare proposte di lavoro illegali. {website} vieta ogni forma di{" "}
-        <em>solicitation</em>, incluse escort.
+        accettare proposte di lavoro illegali. <WebsiteName /> vieta ogni forma
+        di <em>solicitation</em>, incluse escort.
       </p>
       <p>
         <strong>Servizi di escort:</strong>{" "}

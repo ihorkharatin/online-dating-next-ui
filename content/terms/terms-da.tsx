@@ -1,7 +1,8 @@
 // content/terms/terms-da.tsx
 import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import WebsiteName from "@/components/WebsiteName";
 
-export default function TermsDa({ website }: { website: string }) {
+export default function TermsDa() {
   return (
     <div className={style.termsContainer}>
       <h1>VILKÅR OG BETINGELSER</h1>
@@ -14,13 +15,14 @@ export default function TermsDa({ website }: { website: string }) {
         London, W1B 3HH.
       </p>
       <p>
-        Vi driver {website}. {website} (”Sitet”) samt andre relaterede produkter
-        og tjenester, der henviser til disse vilkår (samlet kaldet
-        ”Tjenesterne”). Velkommen til {website}, din online-datingtjeneste.{" "}
-        {website} forbinder mennesker med fælles interesser, præferencer og
-        værdier og tilbyder bl.a. breve, videochat, tekstchat og talechat.
-        Uanset om du søger et seriøst forhold, selskab eller noget midt imellem,
-        tilbyder {website} et trygt og behageligt miljø for ægte forbindelser.
+        Vi driver <WebsiteName />. <WebsiteName /> (”Sitet”) samt andre
+        relaterede produkter og tjenester, der henviser til disse vilkår (samlet
+        kaldet ”Tjenesterne”). Velkommen til <WebsiteName />, din
+        online-datingtjeneste. <WebsiteName /> forbinder mennesker med fælles
+        interesser, præferencer og værdier og tilbyder bl.a. breve, videochat,
+        tekstchat og talechat. Uanset om du søger et seriøst forhold, selskab
+        eller noget midt imellem, tilbyder <WebsiteName /> et trygt og
+        behageligt miljø for ægte forbindelser.
       </p>
       <p>
         Kontakt: +44 7476 887856 eller +48 500 815 139; e-mail:
@@ -35,14 +37,15 @@ export default function TermsDa({ website }: { website: string }) {
         BRUGE TJENESTERNE OG SKAL STRAKS OPHØRE MED BRUGEN.
       </h4>
       <p>
-        Vi leverer onlinedating-tjenester på {website}. Prostitution og escort
-        er strengt forbudt; enhver henvisning til penge, gaver eller anden
-        kompensation på {website} eller via private beskeder er ikke tilladt.
-        Administrationen modererer brugere og kan fjerne konti ved
+        Vi leverer onlinedating-tjenester på <WebsiteName />. Prostitution og
+        escort er strengt forbudt; enhver henvisning til penge, gaver eller
+        anden kompensation på <WebsiteName /> eller via private beskeder er ikke
+        tilladt. Administrationen modererer brugere og kan fjerne konti ved
         overtrædelser. Planlagte ændringer i Tjenesterne kan varsles (f.eks. via
         update@
-        {website}). Ved fortsat brug efter ikrafttræden accepterer du de ændrede
-        vilkår. Tjenesterne er tiltænkt brugere på mindst 18 år.
+        <WebsiteName />
+        ). Ved fortsat brug efter ikrafttræden accepterer du de ændrede vilkår.
+        Tjenesterne er tiltænkt brugere på mindst 18 år.
       </p>
 
       <h2>INDHOLDSFORTEGNELSE</h2>
@@ -88,11 +91,11 @@ export default function TermsDa({ website }: { website: string }) {
         <strong>Vores immaterielle rettigheder.</strong> Vi ejer eller
         licenserer alle rettigheder til kildekode, databaser, funktionalitet,
         software,
-        {website}-design, lyd, video, tekst, fotografi og grafik (”Indholdet”)
-        samt varemærker og logoer (”Mærkerne”). Vi bruger ikke AI til at
-        generere indhold; alt indhold verificeres. Indhold og Mærker er
-        beskyttet og stilles til rådighed ”SOM DET ER” til personlig,
-        ikke-kommerciel brug.
+        <WebsiteName />
+        -design, lyd, video, tekst, fotografi og grafik (”Indholdet”) samt
+        varemærker og logoer (”Mærkerne”). Vi bruger ikke AI til at generere
+        indhold; alt indhold verificeres. Indhold og Mærker er beskyttet og
+        stilles til rådighed ”SOM DET ER” til personlig, ikke-kommerciel brug.
       </p>
       <p>
         <strong>Din brug.</strong> Med forbehold for, at du overholder disse
@@ -186,8 +189,8 @@ export default function TermsDa({ website }: { website: string }) {
           nultolerance; konti blokeres.
         </li>
         <li>
-          Du er ansvarlig for indhold og handlinger på {website}. Anmeld straks
-          mistænkelig/ulovlig adfærd.
+          Du er ansvarlig for indhold og handlinger på <WebsiteName />. Anmeld
+          straks mistænkelig/ulovlig adfærd.
         </li>
         <li>
           Overhold al relevant lovgivning om onlineadfærd, prostitution og
@@ -225,7 +228,7 @@ export default function TermsDa({ website }: { website: string }) {
       <p>
         Lær hinanden at kende gradvist. Det er sikrere at bede den anden besøge
         dig end selv at rejse til ukendte steder. Tag ikke imod ulovlige ”job”.
-        {website} forbyder enhver form for solicitation, inkl. escort.
+        <WebsiteName /> forbyder enhver form for solicitation, inkl. escort.
       </p>
       <p>
         <strong>Escorttjenester:</strong> promotion/tilbud/deltagelse er

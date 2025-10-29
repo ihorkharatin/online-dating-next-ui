@@ -1,7 +1,8 @@
 // content/terms/terms-pl.tsx
 import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import WebsiteName from "@/components/WebsiteName";
 
-export default function TermsPl({ website }: { website: string }) {
+export default function TermsPl() {
   return (
     <div className={style.termsContainer}>
       <h1>REGULAMIN (WARUNKI KORZYSTANIA)</h1>
@@ -14,14 +15,15 @@ export default function TermsPl({ website }: { website: string }) {
         Regent Street, London, W1B 3HH.
       </p>
       <p>
-        Prowadzimy {website}. {website} (dalej „Serwis”) oraz wszelkie inne
-        powiązane produkty i usługi, które odsyłają do niniejszych warunków
-        prawnych („Warunki Prawne”, łącznie „Usługi”). Witaj w {website} –
-        Twojej platformie randkowej online! {website} łączy osoby o podobnych
-        zainteresowaniach, preferencjach i wartościach. Oferujemy m.in. Listy,
-        Wideo czat, Czat tekstowy i Czat głosowy. Niezależnie od tego, czy
-        szukasz poważnej relacji, luźnego kontaktu, czy czegoś pomiędzy,
-        {website} zapewnia bezpieczne i przyjazne środowisko do poznawania
+        Prowadzimy <WebsiteName />. <WebsiteName /> (dalej „Serwis”) oraz
+        wszelkie inne powiązane produkty i usługi, które odsyłają do niniejszych
+        warunków prawnych („Warunki Prawne”, łącznie „Usługi”). Witaj w{" "}
+        <WebsiteName /> – Twojej platformie randkowej online! <WebsiteName />{" "}
+        łączy osoby o podobnych zainteresowaniach, preferencjach i wartościach.
+        Oferujemy m.in. Listy, Wideo czat, Czat tekstowy i Czat głosowy.
+        Niezależnie od tego, czy szukasz poważnej relacji, luźnego kontaktu, czy
+        czegoś pomiędzy,
+        <WebsiteName /> zapewnia bezpieczne i przyjazne środowisko do poznawania
         nowych osób.
       </p>
       <p>
@@ -38,14 +40,15 @@ export default function TermsPl({ website }: { website: string }) {
         USŁUG.
       </h4>
       <p>
-        Świadczymy usługi randkowe online pod adresem {website}. W Serwisie
-        surowo zabronione są prostytucja oraz usługi towarzyskie; w
+        Świadczymy usługi randkowe online pod adresem <WebsiteName />. W
+        Serwisie surowo zabronione są prostytucja oraz usługi towarzyskie; w
         szczególności zabrania się publikowania treści dotyczących zapłaty,
         prezentów lub jakiejkolwiek formy wynagrodzenia w Serwisie lub w
         wiadomościach prywatnych. Administracja moderuje użytkowników i w
         przypadku naruszeń może usunąć konto. O planowanych zmianach Usług
-        poinformujemy z wyprzedzeniem (np. e-mailem z adresu update@{website}).
-        Kontynuując korzystanie po dacie wejścia zmian w życie, akceptujesz
+        poinformujemy z wyprzedzeniem (np. e-mailem z adresu update@
+        <WebsiteName />
+        ). Kontynuując korzystanie po dacie wejścia zmian w życie, akceptujesz
         zmienione warunki. Usługi są przeznaczone wyłącznie dla osób, które
         ukończyły 18 lat.
       </p>
@@ -94,12 +97,12 @@ export default function TermsPl({ website }: { website: string }) {
       <p>
         <strong>Nasza własność intelektualna.</strong> Jesteśmy właścicielem lub
         licencjobiorcą praw do kodu źródłowego, baz danych, funkcjonalności,
-        oprogramowania, projektów {website}, audio, wideo, tekstów, zdjęć i
-        grafik („Treści”), a także znaków towarowych i logotypów („Znaki”). Nie
-        korzystamy ze sztucznej inteligencji do generowania treści w Serwisie;
-        cała zawartość przechodzi weryfikację. Treści i Znaki są chronione
-        prawem autorskim i innymi przepisami. Udostępniamy je „TAK JAK SĄ”
-        wyłącznie do użytku osobistego, niekomercyjnego.
+        oprogramowania, projektów <WebsiteName />, audio, wideo, tekstów, zdjęć
+        i grafik („Treści”), a także znaków towarowych i logotypów („Znaki”).
+        Nie korzystamy ze sztucznej inteligencji do generowania treści w
+        Serwisie; cała zawartość przechodzi weryfikację. Treści i Znaki są
+        chronione prawem autorskim i innymi przepisami. Udostępniamy je „TAK JAK
+        SĄ” wyłącznie do użytku osobistego, niekomercyjnego.
       </p>
       <p>
         <strong>Twoje korzystanie z Usług.</strong> Pod warunkiem przestrzegania
@@ -187,7 +190,7 @@ export default function TermsPl({ website }: { website: string }) {
       </p>
       <ul>
         <li>
-          Zgłaszaj podejrzane/nielegalne aktywności wsparciu {website}.
+          Zgłaszaj podejrzane/nielegalne aktywności wsparciu <WebsiteName />.
           Naruszenia mogą skutkować odpowiedzialnością karną.
         </li>
         <li>
@@ -225,7 +228,7 @@ export default function TermsPl({ website }: { website: string }) {
       <p>
         Zawsze poznawaj rozmówców stopniowo. Bezpieczniej zaprosić kogoś do
         siebie (w Twoje okolice) niż jechać w nieznane. Nie przyjmuj ofert
-        nielegalnej pracy. {website} zabrania wykorzystywania platformy do
+        nielegalnej pracy. <WebsiteName /> zabrania wykorzystywania platformy do
         jakiejkolwiek formy nagabywania (solicitation) czy usług towarzyskich.
       </p>
       <p>
@@ -239,8 +242,8 @@ export default function TermsPl({ website }: { website: string }) {
         zweryfikuje sprawę i podejmie działania zgodnie z zasadami społeczności.
       </p>
       <p>
-        <strong>Handel ludźmi:</strong> {website} jednoznacznie potępia wszelkie
-        formy handlu ludźmi; współpracujemy z organami ścigania.
+        <strong>Handel ludźmi:</strong> <WebsiteName /> jednoznacznie potępia
+        wszelkie formy handlu ludźmi; współpracujemy z organami ścigania.
       </p>
       <h3>Usługi seksualne i treści explicit</h3>
       <p>

@@ -1,0 +1,112 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.container > h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  font-variant: all-small-caps;
+  text-align: center;
+  color: white;
+}
+
+.wrapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  row-gap: 18px;
+  column-gap: 18px;
+  list-style-type: none;
+}
+
+/* НОВЕ: кнопка */
+.allNewsBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border: 1px solid #ffffff;
+  border-radius: 999px; /* pills */
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+  will-change: transform;
+}
+
+.allNewsBtn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.allNewsBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.12);
+}
+
+.allNewsBtn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.28);
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapContainer {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    width: 100%;
+  }
+  .wrapContainer {
+    width: 100%;
+  }
+  .newsSectionList {
+    padding: 0 10px;
+  }
+  .allNewsBtn {
+    width: calc(100% - 32px);
+    margin: 6px 16px 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+  .wrapContainer {
+    width: 100%;
+  }
+  .allNewsBtn {
+    width: calc(100% - 24px);
+    margin: 6px 12px 20px;
+  }
+}

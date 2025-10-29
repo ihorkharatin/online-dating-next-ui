@@ -1,7 +1,8 @@
 // content/terms/terms-nl.tsx
 import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import WebsiteName from "@/components/WebsiteName";
 
-export default function TermsNl({ website }: { website: string }) {
+export default function TermsNl() {
   return (
     <div className={style.termsContainer}>
       <h1>ALGEMENE VOORWAARDEN</h1>
@@ -14,14 +15,15 @@ export default function TermsNl({ website }: { website: string }) {
         3HH.
       </p>
       <p>
-        Wij exploiteren {website}. {website} (de “Site”), evenals andere
-        producten en diensten die naar deze voorwaarden verwijzen (gezamenlijk
-        de “Diensten”). Welkom bij {website}, jouw onlinedatingdienst. {website}
+        Wij exploiteren <WebsiteName />. <WebsiteName /> (de “Site”), evenals
+        andere producten en diensten die naar deze voorwaarden verwijzen
+        (gezamenlijk de “Diensten”). Welkom bij <WebsiteName />, jouw
+        onlinedatingdienst. <WebsiteName />
         brengt mensen met vergelijkbare interesses, voorkeuren en waarden samen
         en biedt o.a. brieven, videogesprekken, tekstchat en spraakchat. Of je
         nu op zoek bent naar een serieuze relatie, gezelschap of iets
-        daartussenin: {website} biedt een veilige, prettige omgeving voor échte
-        connecties.
+        daartussenin: <WebsiteName /> biedt een veilige, prettige omgeving voor
+        échte connecties.
       </p>
       <p>
         Contact: +44 7476 887856 of +48 500 815 139,
@@ -38,15 +40,16 @@ export default function TermsNl({ website }: { website: string }) {
         STAKEN.
       </h4>
       <p>
-        Wij bieden onlinedatingdiensten aan via {website}. Prostitutie en escort
-        zijn strikt verboden; elke verwijzing naar geld, cadeaus of enige
-        vergoeding op {website} of via privéberichten is niet toegestaan. Het
-        beheer modereert gebruikers en kan accounts verwijderen bij
+        Wij bieden onlinedatingdiensten aan via <WebsiteName />. Prostitutie en
+        escort zijn strikt verboden; elke verwijzing naar geld, cadeaus of enige
+        vergoeding op <WebsiteName /> of via privéberichten is niet toegestaan.
+        Het beheer modereert gebruikers en kan accounts verwijderen bij
         overtredingen. Wij kunnen geplande wijzigingen in de Diensten vooraf
-        aankondigen (bijv. via update@{website}). Door de Diensten na
-        ingangsdatum van wijzigingen te blijven gebruiken, ga je akkoord met de
-        aangepaste voorwaarden. De Diensten zijn bedoeld voor gebruikers van 18
-        jaar en ouder.
+        aankondigen (bijv. via update@
+        <WebsiteName />
+        ). Door de Diensten na ingangsdatum van wijzigingen te blijven
+        gebruiken, ga je akkoord met de aangepaste voorwaarden. De Diensten zijn
+        bedoeld voor gebruikers van 18 jaar en ouder.
       </p>
 
       <h2>INHOUDSOPGAVE</h2>
@@ -92,12 +95,12 @@ export default function TermsNl({ website }: { website: string }) {
       <p>
         <strong>Onze intellectuele eigendom.</strong> Wij zijn eigenaar of
         licentiehouder van alle rechten op broncode, databanken,
-        functionaliteit, software, {website}-ontwerpen, audio, video, tekst,
-        foto’s en graphics (de “Inhoud”), alsook van handelsmerken en logo’s (de
-        “Merken”). Wij gebruiken geen AI om content te genereren; alle content
-        wordt geverifieerd. Inhoud en Merken zijn beschermd. Ze worden “AS
-        IS/ZOALS GELEVERD” aangeboden voor persoonlijk en niet-commercieel
-        gebruik.
+        functionaliteit, software, <WebsiteName />
+        -ontwerpen, audio, video, tekst, foto’s en graphics (de “Inhoud”),
+        alsook van handelsmerken en logo’s (de “Merken”). Wij gebruiken geen AI
+        om content te genereren; alle content wordt geverifieerd. Inhoud en
+        Merken zijn beschermd. Ze worden “AS IS/ZOALS GELEVERD” aangeboden voor
+        persoonlijk en niet-commercieel gebruik.
       </p>
       <p>
         <strong>Jouw gebruik.</strong> Onder voorbehoud van naleving van deze
@@ -192,8 +195,8 @@ export default function TermsNl({ website }: { website: string }) {
           nultolerantie; accounts worden geblokkeerd.
         </li>
         <li>
-          Je bent verantwoordelijk voor je inhoud en activiteiten op {website}.
-          Meld verdachte/illegale handelingen direct.
+          Je bent verantwoordelijk voor je inhoud en activiteiten op{" "}
+          <WebsiteName />. Meld verdachte/illegale handelingen direct.
         </li>
         <li>
           Naleving van alle toepasselijke wetgeving inzake onlinegedrag,
@@ -233,7 +236,7 @@ export default function TermsNl({ website }: { website: string }) {
       <p>
         Leer elkaar geleidelijk kennen. Laat de ander jou bezoeken i.p.v. zelf
         naar onbekende plekken te reizen. Neem geen illegale “banen” aan.{" "}
-        {website} verbiedt elke vorm van solicitation, inclusief escort.
+        <WebsiteName /> verbiedt elke vorm van solicitation, inclusief escort.
       </p>
       <p>
         <strong>Escortdiensten:</strong> promotie/aanbod/deelname is verboden.

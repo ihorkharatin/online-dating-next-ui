@@ -199,7 +199,7 @@ export default async function TermsAndConditionsPage({
   const host = resolveHostFromHeaders(h);
   const website = host;
 
-  const termsMap: Record<string, (p: { website: string }) => JSX.Element> = {
+  const termsMap: Record<string, () => React.ReactNode> = {
     en: TermsEn,
     pl: TermsPl,
     de: TermsDe,
@@ -278,7 +278,7 @@ export default async function TermsAndConditionsPage({
       <SeoJsonLd id="ld-article-terms" data={articleLd} />
 
       {/* Рендер перекладу */}
-      <TermsComponent website={website} />
+      <TermsComponent />
     </div>
   );
 }
