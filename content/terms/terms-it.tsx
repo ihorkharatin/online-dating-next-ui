@@ -1,5 +1,5 @@
 // content/terms/terms-it.tsx
-import style from "@/app/[lang]/(terms)/terms-and-conditions/TermsAndConditions.module.css";
+import style from "@/app/[lang]/(main-pages)/(terms)/terms-and-conditions/TermsAndConditions.module.css";
 
 export default function TermsIt({ website }: { website: string }) {
   return (
