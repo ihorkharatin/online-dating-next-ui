@@ -66,7 +66,7 @@ export default async function NewsDetailsPage({ params }: Props) {
           </div>
         )}
 
-        {/* {!!newsData?.files?.length && (
+        {!!newsData?.files?.length && (
           <div className={style.gallery}>
             <Image.PreviewGroup>
               {newsData.files.map((src, i) => (
@@ -79,7 +79,7 @@ export default async function NewsDetailsPage({ params }: Props) {
               ))}
             </Image.PreviewGroup>
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );
