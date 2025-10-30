@@ -20,6 +20,7 @@
   padding: 24px 20px 56px;
 }
 
+/* ===== header ===== */
 .back {
   background: transparent;
   border: none;
@@ -36,7 +37,7 @@
 }
 
 .title {
-  margin: 0 0 8px; /* невеликий низ під заголовком */
+  margin: 0 0 8px;
   font-family: "Noto Sans", sans-serif;
   font-weight: 800;
   font-size: clamp(32px, 5vw, 56px);
@@ -48,25 +49,24 @@
   letter-spacing: 0.01em;
 }
 
-/* ===== subtitle + date (оновлено) ===== */
 .subtitle {
-  margin: 16px 0 6px; /* менший низ, як на референсі */
+  margin: 16px 0 6px;
   font-family: "Noto Sans", sans-serif;
-  font-weight: 600; /* трохи жирніше */
+  font-weight: 600;
   font-size: clamp(17px, 2.1vw, 21px);
-  line-height: 1.55; /* щільніше */
-  letter-spacing: 0.01em; /* легкий трекінг */
+  line-height: 1.55;
+  letter-spacing: 0.01em;
   color: var(--text);
   opacity: 0.95;
   max-width: 980px;
 }
 
 .date {
-  margin-top: 6px; /* ближче до опису */
-  color: #b8bfcc; /* світліший сірий */
+  margin-top: 6px;
+  color: #b8bfcc;
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
-  font-size: 15px; /* як на скріні */
+  font-size: 15px;
   line-height: 1.2;
 }
 
@@ -91,7 +91,7 @@
   white-space: nowrap;
 }
 
-/* HERO (smart fit) */
+/* ===== hero ===== */
 .hero {
   margin: 18px 0 26px;
   display: flex;
@@ -113,7 +113,7 @@
   object-fit: contain;
 }
 
-/* CONTENT */
+/* ===== content ===== */
 .content {
   font-size: 18px;
   line-height: 1.7;
@@ -125,39 +125,66 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
-/* GALLERY — рівні картки */
+/* ===== gallery (центрована + адаптив) ===== */
 .gallery {
   margin-top: 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
   gap: 16px;
+
+  /* центрування самої сітки в контейнері */
+  place-content: center;
+  justify-items: center;
 }
-@media (max-width: 980px) {
+
+@media (max-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 375px) {
   .gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, minmax(220px, 1fr));
   }
 }
 
-.galleryItem {
-  border-radius: 14px !important;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-  background: var(--card);
-}
-
-/* робимо однакову висоту/співвідношення для всіх прев'ю */
-.galleryItem :global(.ant-image-img) {
+.card {
+  display: block;
   width: 100%;
-  height: 260px; /* єдина висота картки */
-  object-fit: cover; /* рівні обрізані прев'ю */
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  text-decoration: none; /* щоб <a> не мав підкреслення */
+}
+
+/* плитка зі сталою пропорцією для рівних прев'ю */
+.thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* AntD малює <img> всередині .ant-image */
+.thumb :global(.ant-image) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.thumb :global(.ant-image-img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background: var(--card);
   border-radius: 14px;
 }
 
+/* ===== responsive дрібниці ===== */
 @media (max-width: 768px) {
   .container {
     padding: 18px 14px 44px;
@@ -169,16 +196,11 @@
     font-size: 16px;
     padding: 18px;
   }
-  .galleryItem :global(.ant-image-img) {
-    height: 220px;
-  }
 }
+
 @media (max-width: 420px) {
   .tag {
     font-size: 13px;
     padding: 8px 12px;
-  }
-  .galleryItem :global(.ant-image-img) {
-    height: 200px;
   }
 }

@@ -2,6 +2,7 @@
 
 const WebsiteName = () => {
   const siteName = window.location.hostname;
+
   return <>{siteName}</>;
 };
 

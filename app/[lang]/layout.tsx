@@ -1,4 +1,5 @@
 import "../globals.css";
+import "antd/dist/reset.css";
 import React from "react";
 import SetHtmlLang from "@/components/SetHtmlLang";
 import Header from "@/components/Header/Header";

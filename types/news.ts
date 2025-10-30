@@ -11,4 +11,5 @@ export default interface NewsItem {
 
   files: string[];
   createdAt: string;
+  updatedAt: string;
 }

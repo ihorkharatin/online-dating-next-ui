@@ -1,0 +1,148 @@
+/* ========= Theme vars ========= */
+:root {
+  --bg: #0b0b10;
+  --card: #0f1115;
+  --text: #e8e9ee;
+  --muted: #a7a9b6;
+  --primary: #1677ff;
+
+  --maxw: 1200px;
+  --gap: 24px;
+  --gap-sm: 16px;
+  --pad-x: 20px;
+  --pad-x-sm: 14px;
+  --pad-y: 56px;
+}
+
+/* ========= Page shell ========= */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  padding: var(--pad-y) var(--pad-x);
+}
+
+.inner {
+  width: 100%;
+  max-width: var(--maxw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--gap) * 1.25);
+}
+
+/* ========= Title ========= */
+.inner > h1 {
+  margin: 0;
+  text-align: center;
+  font-family:
+    "Noto Sans",
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 56px);
+  letter-spacing: 0.01em;
+}
+
+/* ========= Pagination (top/bottom) ========= */
+.paginationWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: -6px 0 6px; /* трохи щільніше до заголовка */
+}
+
+/* AntD pagination — темна тема, округлі кнопки */
+.paginationWrap :global(.ant-pagination) {
+  gap: 6px;
+}
+.paginationWrap :global(.ant-pagination-item) {
+  background: #14161c;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.paginationWrap :global(.ant-pagination-item a) {
+  color: var(--text);
+}
+.paginationWrap :global(.ant-pagination-item-active) {
+  background: #1b1e27;
+  border-color: #2a2f3b;
+}
+.paginationWrap :global(.ant-pagination-item-active a) {
+  color: var(--text);
+}
+.paginationWrap :global(.ant-pagination-prev .ant-pagination-item-link),
+.paginationWrap :global(.ant-pagination-next .ant-pagination-item-link) {
+  background: #14161c;
+  color: var(--text);
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+/* ========= Cards grid ========= */
+.wrapContainer {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--gap);
+}
+
+/* кожен li тягне картку на всю висоту, щоб ряди виглядали рівно */
+.newsSectionList {
+  min-width: 0;
+  display: flex;
+}
+.newsSectionList > * {
+  width: 100%;
+  height: 100%;
+}
+
+/* ========= Back link ========= */
+.backHome {
+  color: var(--text);
+  opacity: 0.85;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+.backHome:hover {
+  opacity: 1;
+}
+
+/* ========= Responsive ========= */
+@media (max-width: 1024px) {
+  .container {
+    padding: 48px var(--pad-x);
+  }
+  .wrapContainer {
+    gap: var(--gap);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px var(--pad-x-sm);
+  }
+  .inner {
+    gap: var(--gap);
+  }
+  .wrapContainer {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--gap-sm);
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapContainer {
+    grid-template-columns: 1fr;
+  }
+}

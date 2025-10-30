@@ -1,51 +1,64 @@
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  padding: 24px 16px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: black;
+  background-color: #000;
 }
 
-.container > h1 {
+.title {
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 44px;
+  line-height: 1.1;
   letter-spacing: 0.05em;
-  margin: 0;
+  margin: 0 0 16px;
   font-variant: all-small-caps;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
-.wrapContainer {
+/* === КАРТКИ === */
+.grid {
+  --gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 картки в ряд */
+  gap: var(--gap);
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 32px;
+}
+
+.item {
+  display: block;
+}
+
+/* === КНОПКА === */
+.ctaWrap {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-  align-items: center;
   justify-content: center;
-  margin: 20px 0;
-  row-gap: 18px;
-  column-gap: 18px;
-  list-style-type: none;
+  margin-top: 4px;
 }
 
-/* НОВЕ: кнопка */
 .allNewsBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 14px 28px;
   border: 1px solid #ffffff;
-  border-radius: 999px; /* pills */
+  border-radius: 999px;
   background: transparent;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-family: "Noto Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1;
   transition:
@@ -54,7 +67,8 @@
     background-color 160ms ease,
     color 160ms ease,
     border-color 160ms ease;
-  will-change: transform;
+  user-select: none;
+  cursor: pointer;
 }
 
 .allNewsBtn:hover {
@@ -75,38 +89,37 @@
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.28);
 }
 
-@media screen and (max-width: 1200px) {
-  .wrapContainer {
-    width: 100%;
-    padding: 0 16px;
+/* === АДАПТИВ === */
+@media (max-width: 992px) {
+  .title {
+    font-size: 38px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
 
-@media screen and (max-width: 769px) {
-  .container {
-    width: 100%;
+@media (max-width: 600px) {
+  .title {
+    font-size: 34px;
   }
-  .wrapContainer {
-    width: 100%;
-  }
-  .newsSectionList {
-    padding: 0 10px;
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
   .allNewsBtn {
-    width: calc(100% - 32px);
-    margin: 6px 16px 24px;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .container {
-    width: 100%;
+@media (max-width: 375px) {
+  .title {
+    font-size: 30px;
   }
-  .wrapContainer {
-    width: 100%;
-  }
-  .allNewsBtn {
-    width: calc(100% - 24px);
-    margin: 6px 12px 20px;
+  .grid {
+    grid-template-columns: 1fr; /* одна картка у стовпчик */
+    gap: 14px;
   }
 }
